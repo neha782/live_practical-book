@@ -2,20 +2,167 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    width: 1200px;
-    height: 300vh;
-    margin: 0px auto;
-}
-
-.footer {
+.header {
     width: 100%;
-    height: 100vh;
-    background-color: black;
+    height: 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: gray;
 }
 
-.content {
-    display: inline-flex;
+footer {
+    width: 100%;
+    background-color: darkblue;
+}
+
+.sec-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 20px;
+}
+
+.sec-1 h2 {
+    font-size: 20px;
+    color: wheat;
+}
+
+.sec-1 ul {
+    list-style: none;
+}
+
+.sec-1 ul li {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+a:hover {
+    color: orangered;
+}
+
+span {
+    color: lightgrey;
+}
+
+i {
+    color: lightgrey;
+    padding-right: 10px;
+    font-size: 15px;
+}
+
+.about {
+    width: 40%;
+}
+
+.about p {
+    text-align: justify;
+    color: lightgrey;
+}
+
+.sec-2 {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.sec-2 h2 {
+    color: lightgrey;
+}
+
+.sec-2 a {
+    padding: auto;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: red;
+    border-radius: 15px;
+    margin-left: 10px;
+}
+
+.sec-2 a:hover {
+    background-color: lightgrey;
+}
+
+.sec-3 {
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.sec-3 ul {
+    list-style: none;
+    padding: 10px;
+}
+
+.sec-3 ul li {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.sec-3 ul li i {
+    color: gray;
+    line-height: 20px;
+    align-items: center;
+    font-size: 25px;
+}
+
+.sec-3 ul li:nth-child(1):hover {
+    background-color: rgb(37, 68, 241);
+}
+
+.sec-3 ul li:nth-child(2):hover {
+    background-color: rgb(1, 124, 224);
+}
+
+.sec-3 ul li:nth-child(3):hover {
+    background-color: rgb(238, 23, 23);
+}
+
+.sec-3 ul li:nth-child(4):hover {
+    background-color: rgb(25, 38, 228);
+}
+
+.sec-4 {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 30px;
+}
+
+.sec-4 p {
+    color: gray;
+    position: relative;
+}
+
+.sec-4 p ::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    border-color: yellow;
+    transition: all 0.3s;
+}
+
+.sec-4 p:hover::after {
+    width: 100%;
 }
