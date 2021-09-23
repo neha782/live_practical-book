@@ -73,8 +73,8 @@
     transition: 0.5s;
 }
 
-a i {
-    margin-right: 10px;
+.sidebar ul a i {
+    margin-right: 20px;
 }
 
 .sidebar ul li a:hover {
@@ -108,13 +108,11 @@ i {
 }
 
 #chk {
-    position: absolute;
-    visibility: hidden;
-    z-index: -10;
+    display: none;
 }
 
 #chk:checked~.sidebar {
-    left: 0;
+    left: 0%;
 }
 
 #chk:checked~.show-button {
@@ -146,7 +144,7 @@ i {
     .header img {
         visibility: hidden;
     }
-    .show-button {
+    #show-button {
         opacity: 1;
     }
     #chk:checked~.hide-button {
