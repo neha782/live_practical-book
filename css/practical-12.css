@@ -1,0 +1,55 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+table,
+th,
+td {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    height: 40px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+td:hover {
+    background-color: #d5d8dc;
+}
+
+table {
+    box-shadow: 10px 10px 20px #888888;
+    border: 1px #292E49;
+}
+
+.header {
+    background-color: #34495e;
+    height: 50px;
+    color: white;
+    text-align: center;
+}
+
+.link {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+i {
+    padding-left: 10px;
+}
+
+.check {
+    color: green;
+}
+
+.un-check {
+    color: red;
+}

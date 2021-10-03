@@ -84,7 +84,7 @@ html {
     height: 300px;
     margin-left: 10px;
     border-radius: 50%;
-    box-shadow: 10px 10px 20px #888888;
+    box-shadow: 10px 10px 10px #888888;
 }
 
 .circle img {
