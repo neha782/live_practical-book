@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Implementation</title>
+</head>
+
+<body onload="alert('page has been loaded');">
+    <style>
+        .container {
+            height: 400px;
+            width: 500px;
+            background-color: pink;
+            text-align: center;
+            margin: auto;
+        }
+        
+        button {
+            height: 40px;
+            width: 200px;
+            font-size: 20px;
+            display: block;
+            margin: auto;
+        }
+        
+        input {
+            margin-top: 30px;
+            height: 30px;
+            width: 300px;
+        }
+    </style>
+    <div class="container" id="content" onmouseover="fun1();" onmouseleave="fun2();">
+        <h1>This is Example of JS</h1>
+        <button id="button" onclick="btn();">Click Me</button>
+        <input>
+    </div>
+    <script>
+        function btn() {
+            var x = document.getElementById("button");
+            window.open("http://beta-labs.in");
+        }
+
+        function fun1() {
+            var y = document.getElementById("content").style.backgroundColor = "blue";
+
+        }
+
+        function fun2() {
+            var p = document.getElementById("content").style.backgroundColor = "red";
+        }
+    </script>
+
+</body>
+
+</html>
